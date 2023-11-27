@@ -1,0 +1,23 @@
+
+
+<!doctype HTML>
+<html>
+<script src="https://aframe.io/releases/1.0.0/aframe.min.js"></script>
+<script src="https://raw.githack.com/jeromeetienne/AR.js/2.1.4/aframe/build/aframe-ar.js"></script>
+
+<script src="https://rawgit.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
+
+
+
+<body style='margin : 0px; overflow: hidden;'></body>
+    <a-scene embedded arjs="debugUIEnabled: false;" vr-mode-ui="enabled: false">  
+   
+     
+            <a-marker preset="hiro">
+        <a-entity gltf-model=”url(scene.gltf)” scale=".05 .05 .05" position="0 0 -1" rotation="0 180 0"></a-entity>
+       
+      </a-marker>
+      <a-entity camera></a-entity>
+    </a-scene>
+  </body>
+</html>
